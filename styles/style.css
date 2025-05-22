@@ -26,7 +26,7 @@ body {
 
 .cabecalho__menu{
     display: flex;
-    gap: 80px;
+    gap: 50px;
 }
 
 .cabecalho__menu__link{
@@ -38,11 +38,11 @@ body {
 }
 
 .apresentacao{
-    padding: 6% 21%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 82px;
+    gap: 80px;
 }
 
 .apresentacao__conteudo{
@@ -50,6 +50,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+.curriculo__conteudo{
+    padding: 5% 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .apresentacao__conteudo__titulo{
@@ -84,6 +91,12 @@ body {
     font-size: 1.5rem;
  }
 
+ .apresentacao__links__sub{
+    font-family: var(--fonte-primaria);
+    font-weight: 200;
+    font-size: 1rem;
+ }
+
  .apresentacao__links__paragrafo{
     font-family: var(--fonte-secundaria);
     font-size: 1rem;
@@ -114,6 +127,16 @@ body {
     background-color: var(--cor-hover);   
  }
 
+ .whatsapp{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+ }
+ 
+ .whatsapp:hover{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
  .rodape{
     padding: 24px;
     color: var(--cor-primaria);
@@ -126,7 +149,7 @@ body {
 
  @media (max-width: 1200px){
     .cabecalho{
-        padding: 6%;
+        padding: 5% 15%;
         }
 
     .cabecalho__menu{
@@ -139,6 +162,10 @@ body {
     }
 
     .apresentacao__conteudo{
+        width: auto;
+    }
+
+    .curriculo__conteudo{
         width: auto;
     }
  }
